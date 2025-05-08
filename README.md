@@ -1,7 +1,7 @@
 # Spill the Tea 🤫
 
 [![Azure DevOps](https://img.shields.io/badge/Deployed%20via-Azure%20DevOps-blue)](https://dev.azure.com/Junaid-Arif/Spill%20the%20Tea)
-[![Azure App Service](https://img.shields.io/badge/Hosted%20on-Azure%20App%20Service-brightgreen)](https://spill-the-tea-YOUR-APP-ID.canadacentral-01.azurewebsites.net/)
+[![Azure App Service](https://img.shields.io/badge/Hosted%20on-Azure%20App%20Service-brightgreen)](https://spill-the-tea-eng7fgg8b2gjhjaw.canadacentral-01.azurewebsites.net/)
 
 This repository contains the source code for **Spill the Tea**, a fun, modern web app that fetches anonymous secrets using the **[Secrets API](https://secrets-api.appbrewery.com/)**. Users can explore random secrets shared by others, inspired by the popular Lisper app. The project emphasizes building **RESTful API integrations**, handling **dynamic content rendering**, and creating a clean, responsive UI.
 
@@ -9,7 +9,7 @@ This repository contains the source code for **Spill the Tea**, a fun, modern we
 
 ## 🖥️ Live Website
 
-👉 **[Spill the Tea](https://spill-the-tea-YOUR-APP-ID.canadacentral-01.azurewebsites.net/)** _(Hosted on Microsoft Azure)_  
+👉 **[Spill the Tea](https://spill-the-tea-eng7fgg8b2gjhjaw.canadacentral-01.azurewebsites.net/)** _(Hosted on Microsoft Azure)_  
 👉 **[Azure DevOps Project](https://dev.azure.com/Junaid-Arif/Spill%20the%20Tea)**
 
 ---
@@ -18,14 +18,16 @@ This repository contains the source code for **Spill the Tea**, a fun, modern we
 
 **Spill the Tea** was created to deepen my understanding of:
 
-- Building **full-stack web apps** with **Node.js** and **Express**.
+- Building **full-stack web apps** using **Node.js**, **Express**, and **EJS**.
 - Making **RESTful API requests** from a server-side app.
 - Structuring API **endpoints** and handling **JSON responses**.
+- Reading and applying **API documentation** to understand endpoints, parameters, and response structures.
 - Using **Axios** for promise-based HTTP requests.
-- Applying **asynchronous programming** concepts like `async/await` and understanding **promises**.
-- Dynamically rendering content using **EJS** templating.
+- Applying **asynchronous programming** concepts like `async/await` and **promises**.
+- Passing dynamic data from **server-side to EJS views**.
 - Designing a clean, responsive UI with **CSS Flexbox** and **media queries**.
 - Deploying apps using **Azure App Service** and **Azure DevOps** CI/CD pipelines.
+- Laying the groundwork for **future user authentication (OAuth 2.0)** integrations.
 
 ---
 
@@ -33,6 +35,7 @@ This repository contains the source code for **Spill the Tea**, a fun, modern we
 
 - **Random Secret Fetching**: Retrieves a new secret and its author from the external **Secrets API** every time the page loads or the button is clicked.
 - **Dynamic Server-Side Requests**: Uses **Axios** to request data and updates the page with **EJS** templating.
+- **No Authentication (Yet)**: For now, no authentication is required for API use — this will be explored in future versions using **Google OAuth 2.0**.
 - **Responsive Design**: Flexible, mobile-friendly design that adapts across device sizes.
 - **Interactive UI Effects**: Secrets are revealed interactively with hover effects and mobile-optimized adjustments.
 - **Dynamic Footer**: Includes real-time year and social/contact links.
@@ -57,13 +60,14 @@ This repository contains the source code for **Spill the Tea**, a fun, modern we
 ## 🧠 What I Learned
 
 - Structuring **RESTful API requests** and understanding **endpoint design**.
-- Handling **server-side API requests** using **Axios**.
-- Implementing **async/await** patterns for asynchronous programming.
-- Rendering API responses dynamically with **EJS**.
-- Optimizing **responsive design** with media queries for mobile users.
-- Managing **touch-specific behaviors** for interactive UI on smartphones.
+- Reading and applying **API documentation** effectively.
+- Handling **server-side API requests** using **Axios** and understanding the **request/response lifecycle**.
+- Implementing **async/await** patterns for efficient asynchronous programming.
+- Rendering dynamic content with **EJS**, including passing and rendering server-side data.
+- Optimizing **responsive design** with media queries and UI effects.
+- Managing **touch-specific behaviors** for mobile devices.
 - Building **CI/CD pipelines** with Azure DevOps.
-- Deploying full-stack applications to **Azure App Service**.
+- Deploying full-stack applications seamlessly to **Azure App Service**.
 
 ---
 
@@ -140,5 +144,6 @@ This project is open-source and available for personal use, learning, and modifi
 
 ## 🔗 Credits
 
-- **Secrets API** — [secrets-api.appbrewery.com](https://secrets-api.appbrewery.com/)
+- **Secrets API** — [secrets-api.appbrewery.com](https://secrets-api.appbrewery.com/) — powering the anonymous secrets feature.
+- Inspired by the **Whisper App** for anonymous, community-shared secrets.
 - Design inspired by minimalist, interactive, and mobile-responsive UI best practices.

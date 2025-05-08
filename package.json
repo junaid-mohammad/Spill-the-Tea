@@ -1,19 +1,43 @@
 {
-  "name": "5.6-secrets-project",
+  "name": "spill-the-tea",
   "version": "1.0.0",
-  "description": "",
+  "description": "A modern web app that fetches anonymous secrets from the Secrets API. Uses Axios and Express for server-side API requests and EJS for dynamic content rendering. Mobile-responsive design inspired by Whisper app.",
   "main": "index.js",
   "type": "module",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "engines": {
+    "node": ">= 14.0.0",
+    "npm": ">= 6.0.0"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "homepage": "https://spill-the-tea-eng7fgg8b2gjhjaw.canadacentral-01.azurewebsites.net/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/junaid-mohammad/Spill-the-Tea.git"
+  },
+  "bugs": "",
+  "keywords": [
+    "Secrets API",
+    "Axios",
+    "Express",
+    "EJS",
+    "RESTful API",
+    "Node.js",
+    "anonymous secrets",
+    "responsive design"
+  ],
+  "author": "Junaid Arif",
+  "contributors": [],
+  "scripts": {
+    "dev": "nodemon index.js",
+    "test": ""
+  },
   "dependencies": {
-    "axios": "^1.7.9",
-    "body-parser": "^1.20.3",
+    "axios": "^1.9.0",
+    "body-parser": "^2.2.0",
     "ejs": "^3.1.10",
-    "express": "^4.21.2"
-  }
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  },
+  "license": "ISC"
 }
