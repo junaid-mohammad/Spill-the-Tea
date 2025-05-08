@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Spill the Tea</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="styles/main.css" />
+    <link rel="icon" href="https://emojiapi.dev/api/v1/shushing_face/64.png" type="image/png">
+  </head>
+
+  <body>
+    <h1>What's Your Secret? 👀</h1>
+
+    <!-- Secret Card -->
+    <div class="card">
+      <p><%= secret %></p>
+    </div>
+
+    <!-- Username -->
+    <p class="user">Shared by: <%= user %></p>
+
+    <!-- Button to fetch new secret -->
+    <form action="/" method="GET">
+      <button class="refresh-btn" type="submit">Get Another Secret</button>
+    </form>
+
+    <!-- Footer Section -->
+    <footer>
+      <p>Copyright &copy; <%= new Date().getFullYear() %> | Junaid Arif</p>
+      <nav>
+        <a href="https://junaid-mohammad.github.io/HTML-Portfolio-Website/"
+          >Website</a
+        >
+        <a href="https://github.com/junaid-mohammad">GitHub</a>
+        <a href="https://www.linkedin.com/in/junaidarif-mohammad/">LinkedIn</a>
+        <a href="mailto:mohammad.junaidarif@mail.mcgill.ca">Email</a>
+      </nav>
+    </footer>
+    <script src="/scripts/mobile.js"></script>
+  </body>
+</html>

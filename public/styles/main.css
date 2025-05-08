@@ -1,0 +1,146 @@
+:root {
+  --card-height: 65vh;
+  --card-width: calc(var(--card-height) / 1.5);
+}
+
+/* Body changes */
+body {
+  min-height: 100vh;
+  background: #212534;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: white;
+  font-family: "Titan One", cursive;
+  margin-bottom: 20px;
+}
+
+/* Secret Card Styling */
+.card {
+  background: url("../images/whisper-img.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: var(--card-width);
+  height: var(--card-height);
+  padding: 3px;
+  position: relative;
+  border-radius: 6px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  font-size: 1.5em;
+  color: rgb(88 199 250 / 0%);
+  font-family: "Gloria Hallelujah", cursive;
+}
+
+.card:hover {
+  color: rgb(88 199 250 / 100%);
+  transition: color 1s;
+}
+
+/* Card Effects */
+.card:hover:before,
+.card:hover:after {
+  animation: none;
+  opacity: 0;
+}
+
+.card::before {
+  content: "";
+  width: 104%;
+  height: 102%;
+  border-radius: 8px;
+  background-image: linear-gradient(var(--rotate), #5ddcff, #3c67e3 43%, #4e00c2);
+  position: absolute;
+  z-index: -1;
+  top: -1%;
+  left: -2%;
+  animation: spin 4s linear infinite;
+}
+
+.card::after {
+  position: absolute;
+  content: "";
+  top: calc(var(--card-height) / 6);
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  transform: scale(0.8);
+  filter: blur(calc(var(--card-height) / 6));
+  background-image: linear-gradient(var(--rotate), #5ddcff, #3c67e3 43%, #4e00c2);
+  opacity: 1;
+  transition: opacity 0.5s;
+  animation: spin 2.5s linear infinite;
+}
+
+/* Refresh Button Styling */
+.refresh-btn {
+  background-color: #5ddcff;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.5rem;
+  padding: 15px 30px;
+  color: #212534;
+  font-family: "Titan One", cursive;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.refresh-btn:hover {
+  background-color: #3c67e3;
+  color: white;
+  transform: scale(1.05) translateY(-2px);
+}
+
+/* Footer Section */
+footer {
+  margin-top: auto; /* Pushes it to the bottom */
+  padding-bottom: 20px;
+  text-align: center;
+  color: #aaa; /* Less attention-seeking */
+  font-family: sans-serif;
+  font-size: 0.9rem; /* Slightly smaller */
+  opacity: 0.6; /* Make it more subtle */
+}
+
+footer nav a {
+  color: #5ddcff;
+  text-decoration: none;
+  font-weight: normal;  /* Removed bold to tone it down */
+  margin: 0 12px;
+  transition: color 0.3s ease;
+}
+
+footer nav a:hover {
+  color: #3c67e3;
+}
+
+.user {
+  color: white;
+  font-size: 20px;
+  font-family: "Titan One", cursive;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  :root {
+    --card-height: 50vh;
+  }
+}
+
+
